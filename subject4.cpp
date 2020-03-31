@@ -12,6 +12,6 @@ public:
                 table[s[right]] = right;
             }
         }
-        return max(maxlen, right-left-1); 
+        return max(maxlen, right-left-1);   //因为求的是子串因此要减1
     }
 };
