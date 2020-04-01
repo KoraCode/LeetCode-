@@ -22,7 +22,7 @@ public:
             }
             if(str[i]>='0'&&str[i]<='9'){
                 start=true;
-                result=result*10+str[i]-48;
+                result=result*10+str[i]-48;     //ASCII码表 0是48
                 //判断溢出
                 if(flag*result>INT_MAX)
                     return INT_MAX;
