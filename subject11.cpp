@@ -5,7 +5,6 @@ public:
         string reps[] = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
 
         string res;
-        int 
         for (int i = 0; i < 13; i ++ )  //这里不使用图里的count了，一遍一遍来就行了
             while(num >= values[i])
             {
