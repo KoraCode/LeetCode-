@@ -1,3 +1,4 @@
+//整数转罗马字
 class Solution {
 public:
     string intToRoman(int num) {
@@ -12,5 +13,27 @@ public:
                 res += reps[i];
             }
         return res;
+    }
+};
+
+//罗马字转整数
+class Solution {
+public:
+    int romanToInt(string s) {
+        int num=0;
+        map<char, int> m = { {'I',1} ,{'V', 5} ,{'X', 10},{'L', 50} ,{'C', 100} ,{'D', 500} ,{'M', 1000} };
+        for (int i = 0; i < s.size(); i++)
+        {
+            if (m[s[i]] >= m[s[i + 1]])
+            {
+                num = m[s[i]]+num;
+            }
+            else
+            {
+                num = m[s[i+1]] - m[s[i]]+ num;
+                i++;
+            }
+        }
+        return num;
     }
 };
