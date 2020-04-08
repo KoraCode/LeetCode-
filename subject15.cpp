@@ -33,7 +33,7 @@ public:
             for(int i=0;i<s.size();i++){
                 str.push_back(s[i]);            //输入到临时中间保存
                 func(ans,str,digits,index+1);   //继续下一步
-                str.pop_back();
+                str.pop_back();                 //回溯位置
             }
         }
     }
