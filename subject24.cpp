@@ -14,8 +14,10 @@ public:
                 {
                     j++;
                     k++;
-                    next.push_back(k);
-                }
+                    if(str[j]!=str[k])
+                        next.push_back(k);
+                    else
+                        next.push_back(next[k]);
                 else
                 {
                     k=next[k];
