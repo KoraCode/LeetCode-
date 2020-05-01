@@ -13,7 +13,7 @@ public:
         int l = 0, r = n;
         while (l <= r)
         {
-            int mid = l + (r - l) / 2;
+            int mid = (l + r) / 2;
             if (nums[mid] == target)
             {
                 return mid;
