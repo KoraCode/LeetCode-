@@ -1,3 +1,7 @@
+先遍历strs，对每个string进行排序，异位词的排序结果是一样的，在map中的key值也就一样，
+然后在map中添加对应的vector，再将vector逐个添加到res中代码
+
+
 class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
